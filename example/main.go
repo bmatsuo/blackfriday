@@ -19,7 +19,7 @@ import (
 	"flag"
 	"fmt"
 	"io/ioutil"
-	"github.com/russross/blackfriday"
+	"github.com/bmatsuo/blackfriday"
 	"os"
 	"runtime/pprof"
 	"strings"
@@ -94,7 +94,7 @@ func main() {
 
 	// read the input
 	var input []byte
-	var err os.Error
+	var err error
 	args := flag.Args()
 	switch len(args) {
 	case 0:
